@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Adopt a Pet</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Header starts here -->
+<div class="header">
+    <div class="header-logo">
+        <a href="index.html"><img src="image/logo.png" alt="A logo" width="70"></a>
+    </div>
+    <div class="header-para">
+        <h1>Pet's World</h1>
+        <p>Adopt your friendly companion</p>
+    </div>
+    <hr>
+</div>
+
+<!-- Navigation bar starts here -->
+
+<div class="navigation-bar">
+    <nav>
+        <a href="index.html">Home</a> ｜
+        <a href="available_pets.html">Available Pets</a> ｜
+        <a href="adopt_a_pet.html">Adopt a Pet</a>
+    </nav>
+</div>
+
+<!-- The main content of the page is here-->
+<div class="content-adopt-a-pet-page">
+    <p>Pet adoption form</p>
+    <form>
+        <table class="adopt-table">
+            <tr>
+                <td>First Name*:</td>
+                <td><input type="text" name="first-name" required maxlength="20" minlength="3" placeholder="First name"></td>
+            </tr>
+            <tr>
+                <td>Last Name*:</td>
+                <td><input type="text" name="last-name" required maxlength="20" minlength="3" placeholder="Last name"></td>
+            </tr>
+            <tr>
+                <td>Email*:</td>
+                <td><input type="email" name="email" required placeholder="Email"></td>
+            </tr>
+            <tr>
+                <td>Phone Number*:</td>
+                <td><input type="tel" name="phone" required placeholder="xxx-xxx-xxxx" pattern="[0-9]{10}" ></td>
+            </tr>
+            <tr>
+                <td>How would you like us to contact you?</td>
+                <td><input type="radio" value="contact-phone" name="contact-method">phone
+                <input type="radio" value="contact-email" name="contact-method">Email</td>
+            </tr>
+            <tr>
+                <td>Your desired pet:</td>
+                <td><select>
+                    <option>Tiger</option>
+                    <option>Fluffy</option>
+                    <option>Micky</option>
+                    <option>Ringo</option>
+                </select></td>
+            </tr>
+
+        <tr>
+            <td colspan="2">Do you want to leave us any additional comments?</td>
+        </tr>
+        <tr>
+            <td colspan="2"><textarea rows="5" cols="30" placeholder="Addtional comments"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="checkbox" name="agree-t&c" value="agree-t&c"> I agree to your T&C</td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="checkbox" name="subscribe-monthly-newsletter" value="subscribe-monthly-newsletter"> I want to subscribe to your monthly newsletter</td>
+        </tr>
+        </table>
+        <button type="submit" class="submit-button"><img src="image/paw.png" id="submit-button-image" alt="submit button"></button>
+    </form>
+
+</div>
+
+<!-- Footer starts here -->
+
+<div class="footer">
+    <hr>
+    <p>All rights reserved &copy;ZHC</p>
+</div>
+
+</body>
+
+</html>
